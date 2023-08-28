@@ -24,6 +24,7 @@ public class workingWithFrame {
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(2);
 		String name=driver.switchTo().frame("frame2").getTitle();
+		
 		System.out.println(name);
 	WebElement button1=driver.findElement(By.xpath("/html/body/button"));
 	button1.click();

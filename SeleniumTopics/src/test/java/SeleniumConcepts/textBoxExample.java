@@ -11,9 +11,9 @@ public class textBoxExample {
 	public static void main(String[] args) {
 		//TODO Auto-generated method stub
 
-
+		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "E:\\Personal\\Testing_Stuffs\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+ driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.leafground.com/");
 		driver.findElement(By.xpath("/html/body/div[1]/div[2]/div/form[2]/ul/li[3]/a/i[1]")).click();
